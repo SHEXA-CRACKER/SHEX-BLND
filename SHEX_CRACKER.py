@@ -534,7 +534,7 @@ def startgrab():
 																	       print('\x1b[31;1mPassword : \x1b[37;1m'+ pass10  + '\n'+"\x1b[0m")
 																	       cek = open("chkpoint.txt", "a")
 																               cek.write("{ = SHEX BLND = } "+"\nCHKPOINT"+"\n[ ID ] : "+user+"\n[ PASS ] : "+pass10+"\n Tele: @SHEX_CRACKER")
-			 												               cek.close()		
+			 												                       cek.close()		
 												                                               cekpoint.append(user+pass10)		                                                                                          								
 except:   
 			pass
