@@ -90,6 +90,17 @@ RH = """
 ║╚═╝║║─║║╚══╦╝╔╗╚╗║╚═╝║╚═╝║║─║║╠╝╚╝║
 ╚═══╩╝─╚╩═══╩═╝╚═╝╚═══╩═══╩╝─╚═╩═══╝
 """
+CorrectUsername = "SHEXBLND"
+CorrectPassword = "SHEXYUNS"
+
+loop = 'true'
+while (loop == 'true'):
+    username = raw_input("\033[1;96m[☆] \x1b[1;93mUSERNAME TOOLS INI \x1b[1;96m>>>> ")
+    if (username == CorrectUsername):
+    	password = raw_input("\033[1;96m[☆] \x1b[1;93mPASSWORD TOOLS INI \x1b[1;96m>>>> ")
+        if (password == CorrectPassword):
+            print "Logged in successfully as " + username
+            loop = 'false'
 
 print(RH)
 def login():
